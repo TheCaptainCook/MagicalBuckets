@@ -1,0 +1,8 @@
+name: magicalBuckets
+version: '1.0'
+main: github.com.thecaptaincook.magicalBuckets.MagicalBuckets
+api-version: '1.21'
+prefix: MG
+authors: [ The Captain Cook ]
+description: This plugin makes all Buckets Infinite
+website: https://github.com/thecaptaincook
