@@ -5,10 +5,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.Inventory;
-
-import javax.swing.*;
-import java.util.Objects;
 
 public class infiniteWaterBucket implements Listener {
 
@@ -17,11 +13,14 @@ public class infiniteWaterBucket implements Listener {
 
         Player player = event.getPlayer();
 
-        if (Objects.requireNonNull(player.getInventory().getItemInMainHand().getItemMeta()).getDisplayName().equals("§bMagical Water Bucket")) {
+        if ((player.getInventory().getItemInMainHand().getItemMeta()).getDisplayName().equals("§bMagical Water Bucket")) {
             if (event.getAction() == Action.LEFT_CLICK_BLOCK){
                 event.setCancelled(true);
                 player.sendMessage("§bYou have infinite water!");
             }
+        }
+        else {
+            event.setCancelled(true);
         }
     }
 }

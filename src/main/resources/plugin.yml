@@ -6,3 +6,11 @@ prefix: MG
 authors: [ The Captain Cook ]
 description: This plugin makes all Buckets Infinite
 website: https://github.com/thecaptaincook
+
+
+commands:
+  mwb:
+    description: Infinite Water bucket
+    usage:        use /<command> to get the Magical Water Bucket
+    aliases:
+      - magicalWaterBucket
